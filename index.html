@@ -1,0 +1,906 @@
+
+<!-- 기본 폼 시작 --> <!-- 새로운 문서를 작성할때 이부분부터 기본 폼 끝 부분까지 복사해서 붙여넣어주세요 -->
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height'>
+
+<!-- 페이스북 공유하기 메타 태그 -->
+<meta property='og:url'			content='https://codeforulsan.github.io/uipaai/'/>
+<meta property='og:type'		content='website'/>
+<meta property='og:title'		content='울산정보진흥원 인공지능고급반 20210315'/>
+<meta property='og:description'	content='울산정보진흥원 인공지능고급반 20210315'/>
+<meta property='og:image'		content=''/>
+<!-- 페이스북 공유하기 메타 태그 끝 -->
+
+<!-- CDN JS -->
+<!-- 카카오 API -->
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+<!-- Server JS -->
+<!-- JQuery 3.5.1 -->
+<script src='./js/jquery-3.5.1.js'></script>
+<!-- Bootstrap 4.6.0 -->
+<script src='./js/bootstrap/4.6.0/bootstrap.js'></script>
+<!-- Popper 1.6.1 -->
+<script src='./js/popper/1.6.1/popper.js'></script>
+<!-- AOS 페럴렉스 애니매이션 js -->
+<script src='./js/aos/2.3.1/aos.js'></script>
+
+<!-- Server CSS -->
+<!-- Bootstrap 4.6.0 -->
+<link rel='stylesheet' href='./css/bootstrap/4.6.0/bootstrap.css'></link>
+<!-- 애니매이션 CSS -->
+<link rel='stylesheet' href='./css/custom/animation.css'></link>
+<!-- AOS 페럴렉스 애니매이션 js -->
+<link rel='stylesheet' href='./css/aos/2.3.1/aos.css'></link>
+
+<script>
+$(function(){
+	AOS.init();
+});
+</script>
+
+<style>
+body
+{
+	margin : 0 auto;
+	padding : 0 auto;
+	background-attachment : fixed;
+}
+.rowpadding
+{
+	height : 1.7vh;
+}
+li
+{
+	list-style : none;
+}
+.movieBackground
+{
+	position : fixed;
+	right : 0;
+	bottom : 0;
+	min-width : 100%;
+	min-height : 100%;
+	width : auto;
+	height : auto;
+	z-index : -1;
+	background-size : cover;	
+}
+</style>
+
+</head>
+<body>
+<!-- 백그라운드 영상 시작 -->
+<div>
+	<video class='movieBackground' autoplay loop muted poster='img/bg.jpg'>
+		<source src='img/mbg.mp4' type='video/mp4'>
+	</video>
+<!-- 백그라운드 영상 시작 -->
+<div class='container'> <!-- 메인 컨테이너 시작 -->
+
+<!-- 기본 폼 끝 --> <!-- 새로운 문서 작성시에 여기까지 복사해서 붙여넣어 주세요 -->
+
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 제목 단락 시작 -->
+	<div class='card divCardCustomStyle'>
+		<div class='card-body'>
+			울산정보진흥원 인공지능 고급반 20210315 웹페이지
+		</div>
+	</div>
+	<!-- 제목 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 공지사항 단락 시작 -->
+	<div class='card divCardCustomStyle'>
+		<div class='card-body'>
+			이곳은 저희 인공지능 고급반의 수업에 관련된 유용한 정보를 모아서 공유하기 위해 만들어졌습니다.<br>
+		</div>
+	</div>
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- -->
+	<div class='card divCardCustomStyle'>
+		<div class='card-body'>
+			수업에 자주 사용되는 링크들
+		</div>
+	</div>
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='http://xth.kr/aiadv' type='button'>
+					AP클라우드(http://xth.kr/aiadv)
+				</a>
+				<br>
+				<br>
+				pandas 데이터 제어 기초, 스크래핑, OpenCV 영상처리, CNN(Convolutional Neural Network)[합성곱 신경망]
+			</div>
+			<div class='card-footer'>
+				이시경, 김태호 강사님 수업자료
+			</div>
+		</div>
+		<div class='card divCardCustomStyle'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.notion.so/7fdd6d164123468abe8d946c6e48793a#75cee96b7951405fa56520a4830a1f90' type='button'>
+					노션
+				</a>
+				<br>
+				<br>
+				pandas 데이터 제어 심화, 케라스로 익히는 신경망 기초
+			</div>
+			<div class='card-footer'>
+				신재춘, 김경훈 강사님 수업자료
+			</div>
+		</div>
+		<div class='card divCardCustomStyle'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://drive.google.com/' type='button'>
+					구글 드라이브
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://drive.google.com/' type='button'>
+					구글 코랩(Colab)
+				</a>
+				<br>
+				<br>
+				 - 클라우드 서비스로 제공하는 주피터노트북. 일정 시간에따른 환경 초기화가 있음. Github 연동가능. TPU, GPU 런타임의 경우 사용량 제한이 있음.
+			</div>
+		</div>
+	</div>
+	<!-- 공지사항 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			<a class='btn btn-outline-warning rotateStyle' href='https://github.com/CodeForUlsan/uipaai' type='button'>
+				깃허브 리파지토리 주소
+			</a>
+			 - 콜라보레이터로 참여를 원하시는 분은 깃헙 계정(아이디 혹은 이메일)을 단톡방 JY에게 알려주시면 됩니다.
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	
+	<!-- 내부 문서 링크들 모음 시작 --> <!-- @@@ 새롭게 생성된 내부문서는 이 안에 작성해주세요 @@@ -->
+	
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			깃(Git)
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='./howusegithub.html' type='button'>
+					깃헙 간단한 사용방법(내부문서)
+				</a>
+				<br>
+				<br>
+				내용 수정을 원하시면 howusegithub.html 파일을 수정해주세요.
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://gist.github.com/ihoneymon/652be052a0727ad59601' type='button'>
+					.md 파일의 양식인 마크다운(MarkDown) 작성법
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+
+<!-- *************************************** 딥러닝 기초 이론 시작 *************************************************** -->
+
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			딥러닝 기초 이론
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/10' type='button'>
+					문과생도 이해하는 딥러닝 - 퍼셉트론 Perceptron
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/17' type='button'>
+					신경망 Neural Network
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/19' type='button'>
+					오차 역전파, 경사하강법
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/37' type='button'>
+					신경망구현, 활성화함수, 배치
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-up'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/38' type='button'>
+					신경망 학습 실습
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-up'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/39' type='button'>
+					오차역전파법 실습 1
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-up'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/41' type='button'>
+					오차역전파법 실습 2
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-up'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/42' type='button'>
+					신경망 학습 최적화 Optimization
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-left'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/43' type='button'>
+					신경망 초기 가중치 설정
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-left'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/44' type='button'>
+					배치 정규화 Batch Normalization
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-left'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://sacko.tistory.com/45' type='button'>
+					가중치 감소, 드롭아웃
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-left'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.youtube.com/watch?v=ve6gtpZV83E' type='button'>
+					머신러닝의 기초 - 선형 회귀 한 번에 제대로 이해하기 (30분만 투자해봐요!) - 유튜브영상
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.youtube.com/playlist?list=PLQ28Nx3M4JrhkqBVIXg-i5_CVVoS1UzAv' type='button'>
+					모두를 위한 딥러닝 시즌2(파이토치) - 유튜브영상
+				</a>
+				<br><br>
+				- Docker를 사용한 가상화 환경에서 파이토치(PyTorch) 사용법을 배우는 딥러닝 강의
+			</div>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	
+<!-- *************************************** 딥러닝 기초 이론 끝 *************************************************** -->
+	
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	
+<!-- *************************************** 텐서플로우 케라스 시작 *************************************************** -->
+	
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			텐서플로우 & 케라스 (Tensorflow & Keras)
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.youtube.com/c/TensorFlow/featured' type='button'>
+					텐서플로우 공식 유튜브 채널
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='./howyoutubesubtrans.html' type='button'>
+					유튜브 영상 자동번역 기능을 활용해 한글자막으로 보는 방법
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.youtube.com/watch?v=fNxaJsNG3-s&list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S' type='button'>
+					NLP 0 to Hero(총 6편)
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://copycoding.tistory.com/102' type='button'>
+					Tensorflow MNIST 숫자 이미지 하나 불러와서 맞추기
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.tensorflow.org/' type='button'>
+					Tensor Flow 공식홈페이지
+				</a>
+				<br><br>
+				- 주의! 파이썬에서 사용시 파이썬 64비트만 지원
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://tensorflowkorea.gitbooks.io/tensorflow-kr/content/' type='button'>
+					Tensor Flow 한글문서
+				</a>
+				<a class='btn btn-outline-warning rotateStyle' href='https://tensorflowkorea.gitbooks.io/tensorflow-kr/content/g3doc/tutorials/mnist/beginners/' type='button'>
+					MNIST 초급
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://keras.io/' type='button'>
+					Keras 공식홈페이지
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	
+<!-- *************************************** 텐서플로우 케라스 끝 *************************************************** -->
+	
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	
+<!-- *************************************** 파이토치 시작 *************************************************** -->
+
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			파이토치(PyTorch)
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://pytorch.org/' type='button'>
+					PyTorch 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://pytorch.kr/' type='button'>
+					PyTorch 문서번역 프로젝트
+				</a>
+			</div>
+		</div>
+	</div>
+
+<!-- *************************************** 파이토치 끝 *************************************************** -->
+
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	
+<!-- *************************************** 파이썬 시작 *************************************************** -->
+	
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			파이썬(Python) - 판다스(pandas)를 통한 데이터 가공 방법 포함
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='./environmentqna.html' type='button'>
+					개발 환경설정 Q&A
+				</a>
+				<br><br>
+				자신이 겪었던 개발환경 설정 이슈와 해결방법을 공유하기 위한 문서입니다. 내용 수정을 원하시면 environmentqna.html 파일을 수정해주세요.
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://twpower.github.io/17-with-usage-in-python' type='button'>
+					파이썬에서 with문 사용하기
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://kibua20.tistory.com/91' type='button'>
+					Python 폴더 및 파일 처리 함수 모음
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='http://blog.naver.com/samsjang/220771392035' type='button'>
+					Matplotlib 애니메이션으로 라이브 그래프 그리기
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='http://hleecaster.com/python-seaborn-color/' type='button'>
+					seaborn 컬러 팔레트 선택하기
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://aldente0630.github.io/data-science/2018/08/05/a-beginners-guide-to-optimizing-pandas-code-for-speed.html' type='button'>
+					판다스 코드 속도 최적화를 위한 초보자 안내서
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://kamang-it.tistory.com/entry/PythonCrawlingScraping%ED%81%AC%EB%A1%A4%EB%A7%81%EA%B3%BC-%EC%8A%A4%ED%81%AC%EB%9E%98%ED%95%91-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%9B%90%EB%A6%AC1' type='button'>
+					크롤링과 스크래핑, 그리고 원리(1)
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://le-piee.tistory.com/77' type='button'>
+					Flask를 이용한 API 만들기 (feat.naverAPI)
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='http://growthj.link/python-%EA%B5%AC%EA%B8%80-colab%EC%9C%BC%EB%A1%9C-pd-read_csv-%ED%99%9C%EC%9A%A9%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/' type='button'>
+					구글 Colab으로 데이터 불러오기(pd.read_csv 활용 방법)
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.python.org/' type='button'>
+					파이썬 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.anaconda.com/' type='button'>
+					Anaconda 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://docs.python.org/3/' type='button'>
+					파이썬3 공식 문서
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='http://www.flowdas.com/pages/python-docs-ko.html' type='button'>
+					파이썬 한국어 번역 프로젝트
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://python.flowdas.com/' type='button'>
+					파이썬3 한국어 번역 문서
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://python.flowdas.com/howto/urllib2.html' type='button'>
+					urllib 패키지를 사용하여 인터넷 리소스를 가져오는 방법
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.pythonpad.co/courses/intro-1/' type='button'>
+					카이스트 파이썬 기초 공개강의
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://codecombat.com/' type='button'>
+					코드컴뱃
+				</a>
+				<br><br>
+				- 파이썬 학습용 웹게임
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://matplotlib.org/' type='button'>
+					Matplotlib 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://docs.bokeh.org/' type='button'>
+					Bokeh 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://altair-viz.github.io/' type='button'>
+					Altair 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://numpy.org/' type='button'>
+					Numpy 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://pandas.pydata.org/' type='button'>
+					pandas 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://seaborn.pydata.org/' type='button'>
+					seaborn 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://python-visualization.github.io/folium/' type='button'>
+					Folium 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.crummy.com/software/BeautifulSoup/' type='button'>
+					Beautiful Soup 공식홈페이지
+				</a>
+				<br><br>
+				웹 스크래핑 필수도구. pip install bs4 로 패키지 설치
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://flask-docs-kr.readthedocs.io/ko/latest/' type='button'>
+					Flask 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://docs.djangoproject.com/ko/3.2/intro/' type='button'>
+					Django 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://geopy.readthedocs.io/en/stable/' type='button'>
+					GeoPy 공식홈페이지
+				</a>
+				<br><br>
+				구글맵스(googlemaps)대신 사용할수 있는 위치API. geopy로 오픈스트리트맵을 활용하면 구글맵스와 달리 무료로 사용 가능!
+			</div>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+
+<!-- *************************************** 파이썬 끝 *************************************************** -->
+
+	<div class='rowpadding'></div> <!-- 여백 div -->
+
+<!-- *************************************** 기타 머신러닝, 딥러닝 라이브러리 시작 ********************************************* -->
+
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			기타 머신러닝, 딥러닝 라이브러리들
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://kr.mathworks.com/products/matlab.html' type='button'>
+					MATLAB 공식홈페이지
+				</a>
+				<br><br>
+				- 별도의 스크립트 언어를 사용. 파이썬과 무관함.
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://docs.microsoft.com/ko-kr/dotnet/machine-learning/' type='button'>
+					ML.NET 공식홈페이지
+				</a>
+				<br><br>
+				- C# 사용. .Net Core(닷넷 코어) 스탠다드 환경 지원
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='http://accord-framework.net/' type='button'>
+					Accord.NET 공식홈페이지
+				</a>
+				<br><br>
+				- C# 사용. .Net Core(닷넷 코어)에서 사용 불가. 일반적인 .Net Framework(닷넷 프레임워크) 에서만 사용가능
+			</div>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+
+<!-- *************************************** 기타 머신러닝, 딥러닝 라이브러리 끝 ********************************************* -->	
+
+	<div class='rowpadding'></div> <!-- 여백 div -->
+
+<!-- *************************************** Open API와 데이터 제공 플랫폼들 시작 ********************************************* -->
+
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			Open API와 json, xml, csv 데이터 제공 플랫폼들
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://api.mathjs.org/' type='button'>
+					Math.js API문서 페이지
+				</a>
+				<br><br>
+				- Open API 학습용
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.kaggle.com/' type='button'>
+					Kaggle
+				</a>
+				<br><br>
+				- 머신러닝을 위한 데이터 제공 포털(해외)
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.data.go.kr/' type='button'>
+					공공데이터포털 data.go.kr
+				</a>
+				<br><br>
+				- open API 및 xml, json등의 데이터 제공
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='http://data.ulsan.go.kr/index.ulsan' type='button'>
+					울산광역시 공공데이터포털
+				</a>
+				<br><br>
+				- 울산지역 open API 및 xml, json등의 데이터 제공
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.aihub.or.kr/' type='button'>
+					AI Hub
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://developers.naver.com/main/' type='button'>
+					네이버 개발자 센터
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	
+<!-- *************************************** Open API와 데이터 제공 플랫폼들 끝 ********************************************* -->	
+	
+	<div class='rowpadding'></div> <!-- 여백 div -->
+
+<!-- *************************************** 하이브리드 앱 개발툴들 시작 ********************************************* -->
+
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			하이브리드 앱 개발툴들
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://reactnative.dev/' type='button'>
+					React Native 공식홈페이지
+				</a>
+				<br><br>
+				- React 기반
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://flutter.dev/' type='button'>
+					Flutter 공식홈페이지
+				</a>
+				<br><br>
+				- 구글에서 개발한 Dart 라는 프로그래밍 언어 사용
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://docs.microsoft.com/ko-kr/xamarin/' type='button'>
+					Xamarin 공식홈페이지
+				</a>
+				<br><br>
+				- C# 사용, 구 Monodeveloper
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://ionicframework.com/' type='button'>
+					Ionic 공식홈페이지
+				</a>
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://cordova.apache.org/' type='button'>
+					Apache Cordova 공식홈페이지
+				</a>
+				<br><br>
+				- 구 PhoneGap
+			</div>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	
+<!-- *************************************** 하이브리드 앱 개발툴들 끝 ********************************************* -->
+	
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	
+<!-- *************************************** 프론트엔드 웹 시작 ********************************************* -->
+
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			프론트엔드(Front-end) 웹 관련 - HTML(Hyper Text Markup Language), CSS(Cascading Style Sheets), 자바스크립트(Javascript, JS)
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card-columns'>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://opentutorials.org/course/1' type='button'>
+					생활코딩
+				</a>
+				<br><br>
+				- HTML. CSS. 자바스크립트 부터 PHP, 자바, 파이썬 같은 백엔드까지 무료 강의를 볼수 있는 사이트.
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://developer.mozilla.org/ko/' type='button'>
+					MDN 웹문서
+				</a>
+				<br><br>
+				- HTML, CSS 자바스크립를 중심으로 프론트엔드와 백엔드 기술도 심도있게 다루는 웹사이트.
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://www.w3schools.com/' type='button'>
+					w3school.com(구글 한국어번역 제공)
+				</a>
+				<br><br>
+				- 생활코딩과 비슷하나 공식적으로는 영문으로만 제공되며 c++이나 c#, R에 대한것도 다룸.
+			</div>
+		</div>
+		<div class='card divCardCustomStyle' data-aos='slide-right'>
+			<div class='card-body'>
+				<a class='btn btn-outline-warning rotateStyle' href='https://pridiot.tistory.com/6' type='button'>
+					html 태그 정리
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	
+<!-- *************************************** 프론트엔드 웹 끝 ********************************************* -->
+	
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle' data-aos='slide-right'>
+		<div class='card-body'>
+			<a class='btn btn-outline-warning rotateStyle' href='https://codeforulsan.github.io/aiulsan/' type='button'>
+				표준협회 인공지능 수업때 제작된 깃헙 페이지 링크
+			</a>
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+	<div class='rowpadding'></div> <!-- 여백 div -->
+	<!-- 단락 시작 -->
+	<div class='card divCardCustomStyle'>
+		<div class='card-body'>
+			이 웹페이지를 향후 교육 과정을 거쳐 같은 길을 걸어갈 후배분들에게 헌정합니다.
+		</div>
+	</div>
+	<!-- 단락 끝 -->
+
+<!-- 푸터 부분 시작 --> <!-- 새로운 문서를 작성할때 이부분부터 푸터 부분 끝 부분까지 복사해서 붙여넣어주세요 -->
+
+	<div class='rowpadding'></div> <!-- 여백 div -->
+</div>
+<!-- 백그라운드 영상 끝 -->
+</div><!-- VideoPlayDiv -->
+<!-- 백그라운드 영상 끝 -->
+<script>
+// 카카오링크
+function kakaoLinkSend(){
+	Kakao.Link.sendScrap({
+		requestUrl: 'https://codeforulsan.github.io/uipaai/'
+	});
+}
+</script>
+</body>
+</html>
+
+<!-- 푸터 부분 끝 --> <!-- 새로운 문서를 작성할때 푸터 부분 시작 부분부터 푸터 부분 끝 부분까지 복사해서 붙여넣어주세요 -->
